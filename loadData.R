@@ -1,6 +1,5 @@
 # Load any necessary packages
 if(!require(data.table)){install.packages("data.table")}
-if(!require(plyr)){install.packages("plyr")}
 if(!require(ggplot2)){install.packages("ggplot2")}
 
 # Set working directory
@@ -34,8 +33,8 @@ if(!exists('dat')){
 }
 
 # Save the current Graphical Parameters so that they can be reset
-#if(!exists('op')){
-#  op <- par()
-#}
+if(!exists('op')){
+  op <- par()
+}
 
 
